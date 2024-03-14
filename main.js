@@ -19,3 +19,10 @@ btnSwitch.addEventListener('click',()=>{
 menuBtn.addEventListener('click', ()=>{
   nav.classList.toggle('active');
 })
+
+ScrollReveal().reveal('.container_input', { delay: 400 });
+ScrollReveal().reveal('.form', { delay: 400 });
+ScrollReveal().reveal('.projects', { delay: 400 });
+ScrollReveal().reveal('.main__section-tecno', { delay: 400 });
+ScrollReveal().reveal('.main__section-aboutMe', { delay: 400 });
+ScrollReveal().reveal('.main-container', { delay: 400 });

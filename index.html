@@ -15,8 +15,8 @@
   ">
 </head>
 <body>
-    <header class="main-header" id="start">
-      <p>Sebastian T.R</p>
+    <header class="main-header">
+      <p>Sebastian TR</p>
       
       <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
       
@@ -32,24 +32,25 @@
         <span><i class="fa-solid fa-moon"></i></span>
       </button>
     </header>
-    <main class="main-container df-jc-at">
+    <main class="main-container df-jc-at" id="start">
       <section class="profile">
-        <div class="profile-img">
-          <img src="img/I.jpg" alt="it's me">
+        <div class="container-profile">
+          <div class="profile-img">
+            <img src="img/I.jpg" alt="it's me">
+          </div>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/sebastian-tobon-rativa-41a56426a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/clookin" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/_sebas_tobon_/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://x.com/psebas10?t=3iK9oJlysWsRshlDqx2hZA&s=09" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+          </div>
         </div>
-        <div class="social">
-          <a href="https://www.linkedin.com/in/sebastian-tobon-rativa-41a56426a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/clookin" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.instagram.com/_sebas_tobon_/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="https://x.com/psebas10?t=3iK9oJlysWsRshlDqx2hZA&s=09" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+        <div class="aboutme">
+          <p>I am passionate about FullStack web development. My solid knowledge in front-end with HTML, CSS, JavaScript and libraries like React allow me to build impactful digital experiences. In my work environment, I stand out for my leadership and teamwork, prioritizing efficiency and details in the applications to achieve positive results. My dedication to technological advancement drives me to constantly learn, ready to grow in a competitive and challenging environment, exploring the latest trends in methodologies. Delighted to share my technological journey with you!</p>
         </div>
       </section>
       <section class="main__section-aboutMe df-jc-at" id="aboutMe" style="scroll-margin-top: 16vh;">
         <div class="section-aboutMe-content">
-          <div class="content-p">
-            <!-- <p>Soy un apasionado por la programación web FullStack. Mis sólidos conocimientos en front-end con HTML, CSS, JavaScript y librerías como React me permiten construir experiencias digitales impactantes. En mi entorno laboral, destaco por mi liderazgo y compañerismo, priorizando la eficiencia y detalles en las aplicaciones para lograr resultados positivos. Mi dedicación al avance tecnológico me impulsa a aprender constantemente, listo para crecer en un entorno competitivo y desafiante, explorando las últimas tendencias en metodologías. ¡Encantado de compartir mi viaje tecnológico contigo!</p> -->
-            <p>I am passionate about FullStack web development. My solid knowledge in front-end with HTML, CSS, JavaScript and libraries like React allow me to build impactful digital experiences. In my work environment, I stand out for my leadership and teamwork, prioritizing efficiency and details in the applications to achieve positive results. My dedication to technological advancement drives me to constantly learn, ready to grow in a competitive and challenging environment, exploring the latest trends in methodologies. Delighted to share my technological journey with you!</p>
-          </div>
         </div>
         <article class="section-aboutMe-article">
           <div class="section-aboutMe-contact">
@@ -81,6 +82,8 @@
               <strong class="icon-skills"><i class="fa-brands fa-react"></i></strong>
               <strong class="icon-skills"><i class="fa-brands fa-java"></i></strong>
               <strong class="icon-skills"><i class="fa-brands fa-angular"></i></strong>
+              <strong class="icon-skills"><i class="fa-brands fa-github"></i></strong>
+              <strong class="icon-skills"><i class="fa-brands fa-trello"></i></strong>
             </div>
           <div class="professional-skills">
             <div class="skill">
@@ -130,15 +133,15 @@
       </section>
       <section  class="form" id="form">
         <form class="form-container">
-          <h5 class="">Do you want to contact me? Fill out the form</h5>
+          <div  class="titulo">
+            <h5>Do you want to contact me? Fill out the form</h5>
+          </div>
           <div class="container_input">
             <input type="text" name="name" placeholder="Full name" required>
             <input type="email" name="email" placeholder="Email" required>
-          </div>
-          <div class="container_input">
           <input type="number" name="number" placeholder="Contact number">
+          <button type="submit">Send</button>
           </div>
-            <button type="submit">Send</button>
         </form>
       </section>
     </main>
@@ -149,5 +152,6 @@
       </div>
     </footer>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 </html>
