@@ -39,16 +39,17 @@ body {
     justify-content: space-between;
     padding: 10px;
     height: 4rem;
-    background-color: var(--main-color);
+    background: rgba(255, 255, 255, 0.322);
     align-items: center;
-    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 7px 0px rgba(95, 95, 95, 0.2);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 200;
     &.dark {
-      background-color: var(--darkMode-container);
+      background: rgba(12, 10, 26, 0.2);
       color: var(--fifth-color);
+      box-shadow: none;
       p {
         color: var(--main-color);
       }
@@ -57,11 +58,8 @@ body {
         font-weight: 600;
       }
       .header-list a:hover {
-        background-color: var(--darkMode-contain);
+        background: rgba(255, 255, 255, 0.2);
         color: var(--fifth-color);
-      }
-      .nav {
-        background-color: var(--darkMode-container);
       }
     }
   }
@@ -211,6 +209,9 @@ body {
       .projects p {
         color: var(--main-color);
       }
+      .title-acrt{
+        color: var(--main-color);
+      }
       .social a {
         color: var(--main-color);
       }
@@ -223,6 +224,13 @@ body {
           rgb(0, 0, 0) 0%,
           rgba(42, 72, 128, 0.687) 0%
         );
+      }
+      .aboutme{
+        border-radius: 10px;
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.548);
+        color: #b8b8b8;
+        backdrop-filter: blur(1.9px);
       }
     }
   }
@@ -243,6 +251,7 @@ body {
 }
 .aboutme {
   margin-bottom: 10%;
+  padding: 1rem;
 }
 .profile-img {
   height: 293px;
@@ -460,7 +469,7 @@ body {
     width: 0%;
   }
   100% {
-    width: 85%;
+    width: 90%;
   }
 }
 .skill .communication {
@@ -472,7 +481,7 @@ body {
     width: 0%;
   }
   100% {
-    width: 80%;
+    width: 85%;
   }
 }
 .skill .creativity {
@@ -484,7 +493,7 @@ body {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 80%;
   }
 }
 .svgskills {
@@ -512,6 +521,12 @@ body {
   align-items: center;
 }
 .projects p {
+  margin: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--darkMode-container);
+}
+.title-acrt{
   margin: 30px;
   font-size: 40px;
   font-weight: bold;
@@ -621,6 +636,13 @@ body {
       color: var(--main-color);
     }
   }
+}
+.crt-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  
 }
 @media screen and (max-width: 450px) {
   #main-header{
@@ -839,4 +861,5 @@ width: 300px;
     height: 30px;
     font-size: 17px;
   }
+
 }
