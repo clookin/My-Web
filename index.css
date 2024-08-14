@@ -140,8 +140,8 @@ body {
         );
       }
       .main__section-aboutMe {
-        /* background: linear-gradient(0deg, rgba(199,199,199,0.1825105042016807) 0%, rgba(66, 65, 65, 0.479) 100%); */
         border-top: 1px solid var(--main-color);
+        height: inherit;
       }
       .content-p {
         color: var(--fifth-color);
@@ -762,7 +762,7 @@ body {
     font-size: 15px;
     width: 90%;
     font-weight: 500;
-    height: 80vh;
+    height: 75vh;
     gap: 20px;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -790,6 +790,7 @@ width: 300px;
   .section-aboutMe-article{
     flex-direction: column;
     gap: 25px;
+    margin-bottom: 2rem;
   }
   .section-aboutMe-contact{
     font-size: 14px;
@@ -811,7 +812,10 @@ width: 300px;
     backdrop-filter: blur(0);
     background: none;
   }
-
+  .main__section-aboutMe{
+    height: inherit;
+    padding-top: 3rem;
+  }
   .section-technologies-content{
     flex-direction: column;
   }
